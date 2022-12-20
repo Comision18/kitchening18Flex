@@ -1,6 +1,9 @@
 /* mobile first */
 .header{
     margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .header__logo{
     border-radius: 50%;
@@ -21,6 +24,10 @@
     color: white;
 }
 
+.header__nav{
+    width: 100%;
+}
+
 .header__nav--menu li{
     width: 100%;
     background-color: var(--colorGris);
@@ -31,19 +38,16 @@
 }
 
 /* tablet (768px) */
-@media (min-width: 426px) {
+@media (min-width: 768px) {
     .header__hamburger{
         display: none;
     }
-
+    .header__nav--menu{
+        display: flex;
+        justify-content: space-between;
+    }
     .header__nav--menu li{
         width: 15%;
-        display: inline-block;
-        margin-bottom: 0px;
-        margin-right: 1.25%;
-    }
-    .header__nav--menu li:last-child{
-        margin-right: 0;
     }
 
 }
@@ -51,7 +55,5 @@
 @media (min-width:1180px) {
     .header__nav--menu li{
         width: 180px;
-        margin-bottom: 0px;
-        margin-right: 10px;
     }
 }
