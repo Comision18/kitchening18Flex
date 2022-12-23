@@ -1,9 +1,7 @@
 /* mobile first */
 .header{
     margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+ 
 }
 .header__logo{
     border-radius: 50%;
@@ -29,12 +27,12 @@
 }
 
 .header__nav--menu li{
-    width: 100%;
     background-color: var(--colorGris);
     text-transform: uppercase;
     margin-bottom: 1px;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
 }
 
 /* tablet (768px) */
@@ -43,8 +41,6 @@
         display: none;
     }
     .header__nav--menu{
-        display: flex;
-        justify-content: space-between;
     }
     .header__nav--menu li{
         width: 15%;

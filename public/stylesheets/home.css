@@ -3,12 +3,10 @@
 }
 
 .home__main__section--productos{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .home__main__section__article{
-    width:100%;
+    
 }
 
 .home__main__section__article--imagen{
@@ -57,10 +55,8 @@
         width: 100%;
     }
     .home__main__section--productos{
-        justify-content: space-between;
     }
     .home__main__section__article{
-        width: 48%;
     }
 
 }
