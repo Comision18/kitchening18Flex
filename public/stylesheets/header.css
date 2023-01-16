@@ -1,9 +1,11 @@
 /* mobile first */
+
 .header{
     margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    transition: all 1s;
 }
 .header__logo{
     border-radius: 50%;
@@ -11,6 +13,8 @@
     width: 180px;
     margin: 15px auto 30px;
     display: block;
+    transition: all 5s;
+    animation: rotation 3s linear infinite normal;
 }
 
 .header__hamburger{
@@ -35,6 +39,23 @@
     margin-bottom: 1px;
     text-align: center;
     padding: 10px 0;
+    transition: all .5s;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__nav ul li a {
+    display: inline-block;
+    width: 100%;
+}
+
+.header__nav ul li:hover{
+    
+    background-color: var(--colorRojo);
+   
 }
 
 /* tablet (768px) */

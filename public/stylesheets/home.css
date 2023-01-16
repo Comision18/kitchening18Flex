@@ -21,7 +21,7 @@
 
 .home__main__section__article--imagen-sticker{
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 10px;
 }
 
@@ -45,6 +45,26 @@
     margin: 20px 0;
     background-color: var(--colorGris);
     padding: 8px;
+}
+
+
+.home__main__section--courses {
+    padding: 0 20px;
+}
+
+.home__main__section--courses .carousel-courses-item{
+    margin: 0 5px;
+}
+
+.home__main__section--whatsapp {
+    position: fixed;
+    z-index: 1000;
+    right: -10px;
+    bottom: 10px;
+}
+
+.home__main__section--whatsapp img {
+    width: 100px;
 }
 
 @media (min-width:768px) {
@@ -71,3 +91,4 @@
     }
 
 }
+
